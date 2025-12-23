@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-QuranKu - Juz, Surah, Tajwid, Tafsir</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet"> <!-- Font Arab -->
+</head>
+<body>
+    <header>
+        <h1>Al-QuranKu</h1>
+        <nav>
+            <button id="juz-btn">Juz</button>
+            <button id="surah-btn">Surah</button>
+            <button id="tajwid-btn">Tajwid</button>
+            <button id="tafsir-btn">Tafsir</button>
+        </nav>
+    </header>
+    <main>
+        <div id="juz-list" class="section hidden">
+            <h2>Daftar Juz</h2>
+            <div id="juz-content"></div>
+        </div>
+        <div id="surah-list" class="section hidden">
+            <h2>Daftar Surah</h2>
+            <div id="surah-content"></div>
+        </div>
+        <div id="tajwid-section" class="section hidden">
+            <h2>Aturan Tajwid</h2>
+            <div id="tajwid-content">
+                <div class="tajwid-item">
+                    <h3>Idgham (Penggabungan)</h3>
+                    <p>Ketika huruf nun atau mim bertemu dengan huruf tertentu, digabungkan tanpa tasydid.</p>
+                    <p class="arab-text">مِنْ رَبِّهِمْ</p>
+                </div>
+                <div class="tajwid-item">
+                    <h3>Iqlab (Perubahan)</h3>
+                    <p>Huruf nun berubah menjadi mim dengan ghunnah.</p>
+                    <p class="arab-text">مِنْ بَعْدِ</p>
+                </div>
+                <!-- Tambahkan aturan lain seperti Izhar, Ikhfak, dll. -->
+            </div>
+        </div>
+        <div id="tafsir-section" class="section hidden">
+            <h2>Tafsir Ayat</h2>
+            <select id="surah-select">
+                <option value="">Pilih Surah</option>
+            </select>
+            <div id="tafsir-content"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
